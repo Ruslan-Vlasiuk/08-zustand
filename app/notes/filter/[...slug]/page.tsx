@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: FilterPageProps): Promise<Met
       title: `${filter} Notes | NoteHub`,
       description: `Browse ${filter} notes in NoteHub`,
       url: `https://notehub.app/notes/filter/${tagValue ?? "all"}`,
-      images: ["https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"],
+      images: [{ url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg" }],
     },
   };
 }

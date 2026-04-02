@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: NoteDetailsPageProps): Promis
         title: `${note.title} | NoteHub`,
         description: note.content ?? "Note details",
         url: `https://notehub.app/notes/${id}`,
-        images: ["https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"],
+        images: [{ url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg" }],
       },
     };
   } catch {
